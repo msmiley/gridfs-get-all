@@ -1,0 +1,16 @@
+{
+  "name": "gridfs-get-all",
+  "version": "1.0.0",
+  "description": "download all GridFS files to disk",
+  "author": "Mike Smiley <msmiley@alumni.rice.edu>",
+  "url": "https://github.com/msmiley/gridfs-get-all",
+  "main": "./src",
+  "repository": "msmiley/gridfs-get-all.git",
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^4.0.7",
+    "command-line-usage": "^4.0.1",
+    "gridfs-stream": "^1.1.1",
+    "mongodb": "^2.2.31"
+  }
+}
