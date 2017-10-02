@@ -50,6 +50,16 @@ let args = [
 // let command-line-args module parse the command line
 const opts = cliArgs(args);
 
+// print usage and exit
+if (opts.help) {
+  const usage = cliUsage({
+    header: "GridFS Get All",
+	  optionList: args
+	});
+  console.log(usage);
+  process.exit();
+}
+
 var fullhost = `mongodb://${opts.host}:${opts.port}/${opts.db}`;
 var remaining = -1;
 var connected = function(db) {
